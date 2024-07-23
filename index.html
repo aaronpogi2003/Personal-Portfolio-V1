@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A hub for classical music enthusiasts to explore different eras, composers, and pieces."
+    />
+    <meta
+      name="keywords"
+      content="Classical Music, Baroque, Romantic, Modern, Composers, Pieces"
+    />
+    <title>Classical Music Hub</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+    />
+    <link
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="nav-links" id="navl">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="#home" class="home">Home</a></li>
+            <li><a href="#era">Era</a></li>
+            <li><a href="#composer">Composer</a></li>
+            <li><a href="#piece">Piece</a></li>
+            <li><a href="#about-me">About Me</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+    </header>
+
+    <!-- Home -->
+    <section id="home" class="home-page">
+      <video class="video-bg" autoplay muted loop>
+        <source src="assets/videos/piano-hammer.mp4" type="video/mp4" />
+      </video>
+
+      <div class="text-box">
+        <a href="#" class="classical-music-hub"
+          ><img
+            src="assets/images/classical-music-hub.png"
+            alt="Classical Music Hub Logo"
+        /></a>
+        <p>Discover the world of classical music</p>
+        <div class="loader">
+          <div class="circle">
+            <div class="dot"></div>
+            <div class="outline"></div>
+          </div>
+          <div class="circle">
+            <div class="dot"></div>
+            <div class="outline"></div>
+          </div>
+          <div class="circle">
+            <div class="dot"></div>
+            <div class="outline"></div>
+          </div>
+          <div class="circle">
+            <div class="dot"></div>
+            <div class="outline"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Era -->
+    <section id="era" class="era">
+      <div class="era-container-1">
+        <h1>ERA</h1>
+      </div>
+      <div class="era-container-2">
+        <div class="card">
+          <div class="card-baroque" data-title="Baroque Era" data-description="1600–1750. Known for its ornate style, characterized by drama, grandeur, and emotional intensity. Famous composers include Johann Sebastian Bach, George Frideric Handel, and Antonio Vivaldi.">
+            <video src="assets/videos/baroque-bg.mp4" muted loop></video>
+            <audio id="audio" src="assets/audio/piano-music.mp3" preload="auto"></audio>
+          </div>
+          
+          <div class="card-classical" data-title="Classical Era" data-description="1750–1820. Characterized by clarity, balance, and symmetry, with a focus on form and structure. Prominent composers include Wolfgang Amadeus Mozart, Ludwig van Beethoven, and Franz Joseph Haydn.">
+              <video src="assets/videos/classical-bg.mp4" muted loop></video>
+          </div>
+          
+          <div class="card-romantic" data-title="Romantic Era" data-description="1800–1910. Emphasizes emotion, imagination, and individualism, with a focus on expressing feelings and experiences. Notable composers include Ludwig van Beethoven, Franz Schubert, and Johannes Brahms.">
+              <video src="assets/videos/romantic-bg.mp4" muted loop></video>
+          </div>
+          
+          <div class="card-modern" data-title="Modern Era" data-description="Late 19th century to present. Characterized by experimentation, innovation, and breaking traditional conventions. Significant composers include Igor Stravinsky, Arnold Schoenberg, and Claude Debussy.">
+              <video src="assets/videos/lake.mp4" muted loop></video>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+    </section>
+
+    <!-- Composer -->
+    <section id="composer" class="composer">
+      <div class="composer-container-1">
+        <h1>COMPOSERS</h1>
+      </div>
+      <div class="composer-container-2">
+        <div class="container">
+          <div class="card">
+            <div class="wrapper">
+              <img
+                class="background-image"
+                src="assets/images/chopin-bg.png"
+                alt="Background image of Chopin"
+              />
+            </div>
+            <img
+              class="title"
+              src="assets/images/chopin-text.png"
+              alt="Chopin"
+            />
+            <img
+              class="character"
+              src="assets/images/chopin-transparent.png"
+              alt="Chopin character"
+            />
+          </div>
+
+          <div class="card">
+            <div class="wrapper">
+              <img
+                class="background-image"
+                src="assets/images/liszt-bg.png"
+                alt="Background image of Liszt"
+              />
+            </div>
+            <img class="title" src="assets/images/liszt-text.png" alt="Liszt" />
+            <img
+              class="character"
+              src="assets/images/liszt-transparent.png"
+              alt="Liszt character"
+            />
+          </div>
+
+          <div class="card">
+            <div class="wrapper">
+              <img
+                class="background-image"
+                src="assets/images/debussy-bg.png"
+                alt="Background image of Debussy"
+              />
+            </div>
+            <img
+              class="title"
+              src="assets/images/debussy-text.png"
+              alt="Debussy"
+            />
+            <img
+              class="character"
+              src="assets/images/debussy-transparent.png"
+              alt="Debussy character"
+            />
+          </div>
+
+          <div class="card">
+            <div class="wrapper">
+              <img
+                class="background-image"
+                src="assets/images/brahms-bg.png"
+                alt="Background image of Brahms"
+              />
+            </div>
+            <img
+              class="title"
+              src="assets/images/brahms-text.png"
+              alt="Brahms"
+            />
+            <img
+              class="character"
+              src="assets/images/brahms-transparent.png"
+              alt="Brahms character"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Piece -->
+    <section id="piece" class="piece">
+      <div class="piece-list">
+        <h1>PIECES</h1>
+        <ul>
+          <li>Moonlight Sonata</li>
+          <li>Raindrop Prelude</li>
+          <li>Gymnopedie No. 1</li>
+          <li>Liebestraum No. 3</li>
+          <li>Swan Lake</li>
+          <li>Clair de Lune</li>
+          <li>Waltz in A Minor</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about-me" class="about-me">
+      <div class="container">
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+    </script>
+  </body>
+</html>
